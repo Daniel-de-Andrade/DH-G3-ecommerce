@@ -1,0 +1,10 @@
+.container-list {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .container-list {
+        flex-direction: column;
+    }
+}

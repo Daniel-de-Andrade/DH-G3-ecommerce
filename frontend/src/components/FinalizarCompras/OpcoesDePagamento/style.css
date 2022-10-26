@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.opcoes-de-pagamento {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column wrap;
+    margin: 5px;
+    padding: 5px;
+}
+
+.opcoes-de-pagamento h3 {
+    display: flex;
+    flex: 1 0 100%;
+    flex-flow: column nowrap;
+    font-size: .8rem;
+    border: 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.pagamentos {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5px;
+    justify-content:space-around;
+}
+
+.pagamento {
+    background-color: rgba(175, 128, 72, 0.31);
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: left;
+    list-style: none;
+    border-bottom: 1px solid #f7efe6;
+}
+
+.pagamento:last-child {
+    border-bottom: none;
+}
+
+.pagamento input {
+    margin: 12px;
+}
+
+.pagamento img {
+    width: 34px;
+    height: 34px;
+    margin: 12px;
+    
+}
+
+.pagamento label {
+    margin: 12px;
+}
+
+.pagamento:hover {
+    background-color: var(--cor1)
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}

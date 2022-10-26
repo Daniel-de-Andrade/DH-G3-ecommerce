@@ -1,0 +1,130 @@
+.container-users-list {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header-section-list {
+    display: flex;
+    width: 98%;
+    height: 50px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+.list-icon {
+    margin-left: 10px;
+}
+
+.container__users-table {
+    display: flex;
+}
+
+.users__table {
+    width: 100%;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.users__table th {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.user__id,
+.user__name,
+.user__lastname,
+.user__email,
+.user__pass,
+.user__cpf,
+.user__aniversario,
+.user__id_endereco,
+.user__id_regra {
+    text-align: center;
+    font-size: 1rem;
+    padding: 4px;
+    height: 50px;
+}
+
+.user__lastname,
+.user__email,
+.user__pass,
+.user__cpf {
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+    min-width: 50px;
+}
+
+tr:hover {
+    background-color: #f5f5f5
+}
+
+.user__btn_view,
+.user__btn_update,
+.user__btn_delete {
+    padding: 4px;
+    text-align: center;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header-section-list {
+        width: 100%;
+    }
+
+    .users__table {
+        font-weight: bold;
+        margin: 24px auto;
+    }
+
+    .users__table th,
+    .users__table td {
+        padding: 6px 12px;
+        flex-flow: column wrap;
+        height: auto;
+    }
+
+    .users__table td {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .users__table td:not(:nth-child(n+7))::before {
+        content: attr(data-title) ": ";
+        font-weight: bolder;
+    }
+
+    .users__table thead {
+        background-color: var(--azul);
+        color: var(--branco);
+    }
+
+    .users__table thead tr th:first-child {
+        color: transparent;
+        font-size: 0;
+    }
+
+    .users__table thead tr th:first-child::before {
+        color: var(--branco);
+        content: 'Usuários';
+        font-size: 16px;
+    }
+
+    .users__table thead tr th:not(:first-child) {
+        display: none;
+    }
+
+    .users__table tbody tr td:last-child {
+        border-bottom: 1px solid var(--cinza);
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    }
+}

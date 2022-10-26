@@ -1,0 +1,148 @@
+.hidden {
+    background-color: transparent;
+    color: transparent;
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.container-products-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section {
+   
+}
+
+.table {
+   
+}
+
+.colunas {
+    
+}
+
+/* .btn-wrapper {
+   
+} */
+
+.btn-update,
+.btn-view,
+.btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transition: 0.4s;
+    padding: 10px;
+    /* word-wrap: normal; */
+    width: 20px;
+}
+
+.btn-update {
+    background-color: blue;
+}
+
+.btn-view {
+    background-color: green;
+}
+
+.btn-delete {
+    background-color: red;
+}
+
+.btn-update:hover {
+    border: whitesmoke;
+}
+
+.btn-view:hover {
+    border: whitesmoke;
+}
+
+.btn-delete:hover {
+    border: whitesmoke;
+}
+
+
+td i {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .products__table {
+        font-weight: bold;
+        margin: 24px auto;
+    }
+
+    .products__table th,
+    .products__table td {
+        padding: 6px 12px;
+        flex-flow: column wrap;
+    }
+
+    .products__table td {
+        display: flex;
+    }
+
+    .products__table td:not(:nth-child(n+7))::before {
+        content: attr(data-title) ": ";
+        font-weight: bolder;
+    }
+
+    .products__table thead {
+        background-color: var(--azul);
+        color: var(--branco);
+    }
+
+    .products__table thead tr th:first-child {
+        color: transparent;
+        font-size: 0;
+    }
+
+    .products__table thead tr th:first-child::before {
+        color: var(--branco);
+        content: 'Usuários';
+        font-size: 16px;
+    }
+
+    .products__table thead tr th:not(:first-child) {
+        display: none;
+    }
+
+    .products__table tbody tr td:last-child {
+        border-bottom: 1px solid var(--cinza);
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.header-section-list {
+  
+}
+
+.list-icon {
+ 
+}
+
+.product__id, 
+.product__name, 
+.product__marca, 
+.product__quantidade, 
+.product__preco, 
+.product__id_categoria {
+   
+}

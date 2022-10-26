@@ -1,0 +1,65 @@
+.titulo-ofertas {
+    background-color: var(--cor2);
+    display: flex;
+    flex: 1 1 100%;
+    /* flex-flow = flex-direction: row; flex-wrap: wrap; */
+    flex-flow: row wrap;
+    margin: 5px auto;
+    padding: 5px;
+    align-items: center;
+}
+
+.titulo-ofertas h2 {
+    font-size: 3.5rem;
+    color: var(--cor1);
+    font-weight: 300;
+    border: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+.titulo-ofertas h4 {
+    font-size: 1.2rem;
+    color: var(--cor1);
+    font-weight: 400;
+    border: 5px;
+    margin: 5px 5px 5px 10px;
+    padding: 5px;
+    text-align: left;
+}
+
+
+.slideshow-promo-container {
+    margin: 0 auto;
+}
+
+.slide-ofertas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.slide-mais-vendidos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.produto-slide-promo {
+    margin: 20px;
+}
+
+.produto-slide-promo p{
+    text-align: center;
+}
+
+.slide-promo-img {
+    width: 180px;
+    height: 180px;
+}
+
+.buttons-ofertas {
+    display:flex;
+    justify-content: center;
+}

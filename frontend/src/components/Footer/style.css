@@ -1,0 +1,246 @@
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.linha-footer {
+    margin: 5px 10px;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 544px) {
+    .linha-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.coluna-footer {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    margin: 5px 10px;
+
+}
+
+.coluna-footer ul {
+    width: 180px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 10px;
+    padding: 5px;
+    width: 103px;
+    height: 70px;
+}
+
+.footer-subrow-social {
+    display: flex;
+    flex: 1 0 100%;
+    flex-flow: row wrap;
+}
+
+.footer-subrow-newsletter {
+    margin: 25px 0;
+    line-height: 20px;
+    margin-left: 0;
+}
+
+.footer p {
+    color: var(--cor1);
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@media screen and (min-width: 544px) {
+    .footer-nav {
+        flex-flow: row wrap;
+    }
+}
+
+
+
+.footer-subrow-social i {
+    margin-right: 25px;
+}
+
+.tbox {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 200px;
+}
+
+@media screen and (min-width: 544px) {
+    .tbox {
+        display: flex;
+        flex-flow: row wrap;
+        width: 400px;
+    }
+}
+
+.tbox input {
+    background-color: rgb(197, 197, 197);
+    height: 30px;
+    border-radius: 25px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: rgb(161, 161, 161);
+    border-width: 0.1em;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 544px) {
+    .tbox input {
+        margin-top: 0px;
+    }
+}
+
+#nome-footer {
+    display: flex;
+    flex-flow: column wrap;
+    width: 140px;
+}
+
+@media screen and (min-width: 544px) {
+    #nome-footer {
+        display: flex;
+        flex-flow: row wrap;
+        width: 360px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+#email-footer {
+    width: 140px;
+    margin-right: 15px
+}
+
+@media screen and (min-width: 544px) {
+    #email-footer {
+        width: 200px;
+    }
+}
+
+.form__content__btn {
+    width: 140px;
+    background-color: transparent;
+    color: var(--cor1);
+    border-radius: 25px;
+    padding: 4px;
+    border-width: 0.3em;
+    border-color: rgb(201, 16, 16);
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 544px) {
+    .form__content__btn {
+        margin-top: 0;
+    }
+}
+
+.form__content__btn:hover {
+    background-color: rgba(240, 255, 240, 0.5);
+    border-color: rgb(209, 209, 72);
+    font-weight: 400;
+}
+
+.contato {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 544px) {
+    .contato {
+        justify-content: space-between;
+    }
+}
+
+.contato ul {
+    min-width: 250px;
+}
+
+.categorias {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 5px 15px;
+    margin: 5px 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.trans {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.cartoes {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px 10px;
+    padding: 0 5px;
+}
+
+.cartoes p {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    /* width: 200px; */
+}
+
+.cartoes i {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 5px;
+}
+
+.ambiente-protegido {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 5px 10px;
+    padding: 0 5px;
+}
+
+.ambiente-protegido p {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.ambiente-protegido i {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 5px;
+}
+
+.linha-footer>p {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column wrap;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+}

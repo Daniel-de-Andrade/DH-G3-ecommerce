@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* INÍCIO RESET */
+:root {
+    --cor1: #fff;
+    --cor2: #000;
+    --cor3: #af8048;
+    --cor4: #585555;
+    --amarelo: #EEA425;
+    --azul: #5893A6;
+    --branco: #fff;
+    --chumbo: #3e3e3e;
+    --cinza: #eee;
+    --preto: #000;
+    --vermelho: #A00B0B;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* FIM RESET*/
+
+/* INÍCIO ESTILOS PADRÕES */
+
+header,
+footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--cor4);
+    font-family: 'Anton', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 24px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2,
+h3 {
+    color: var(--cor4);
+    /* margin: 24px auto 16px; */
+    width: fit-content;
+}
+
+h2 {
+    font-size: 1.25 rem;
+}
+
+h3 {
+    font-size: 1.1 rem;
+}
+
+p {
+    color: var(--cor4);
+    font-size: 1rem;
+    /* line-height: espaço entre linhas */
+    line-height: 24px;
+    /* margin: 8px auto; */
+}
+
+.hidden {
+    background-color: transparent;
+    color: transparent;
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}
+/* FIM ESTILOS PADRÕES */

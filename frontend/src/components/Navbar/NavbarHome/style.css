@@ -1,0 +1,22 @@
+.navbar {
+    background-color: black;
+}
+
+#buttonNAV {
+    height: 38px;
+    background-color:var(--cor3);
+    border: none;
+}
+
+#buttonNAV:hover {
+    color: var(--cor2);
+    background-color:var(--cor1);
+    border: none;
+}
+
+.boton-administrador{
+    color: white;
+   background:none;
+   border: none;
+   margin-right: 15px;
+}
